@@ -7,6 +7,13 @@ module.exports = {
         'almost-white': 'hsl(0, 0%, 98%)',
         'medium-gray': 'hsl(0, 0%, 41%)',
         'almost-black': 'hsl(0, 0%, 8%)'
+      },
+      height: {
+        mobile: '775px'
+      },
+      width: {
+        mobile: '375px',
+        'mobile-navigation': '240px'
       }
     }
   },

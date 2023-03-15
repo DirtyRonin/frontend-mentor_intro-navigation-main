@@ -1,0 +1,3 @@
+.position-right {
+  right: calc(50% - (375px / 2));
+}
