@@ -5,20 +5,34 @@ import { useActualWidth } from './use-actual-width'
 export function useGlobalUi() {
   const [state, dispatch] = React.useState<GlobalUiContextProps>({
     showMobileNavigation: false,
-    breakPointMobileDesign: 900
+    breakPointMobileDesign: 768, //md breakpoint,
+    screenSize: 'none'
   })
 
   const { width } = useActualWidth()
 
+  const toggleScreenSize = React.useCallback(() => {
+    const { screenSize, breakPointMobileDesign } = state
+    const size: 'desktop' | 'mobile' | 'none' =
+      (width || window.innerWidth) < breakPointMobileDesign
+        ? 'mobile'
+        : 'desktop'
+
+    if (size !== screenSize) dispatch((prev) => ({ ...prev, screenSize: size }))
+  }, [width])
+
   const autoCloseMobileNavigation = React.useCallback(() => {
-    if (!state.showMobileNavigation) return
-    if (width < state.breakPointMobileDesign) return
+    const { showMobileNavigation, breakPointMobileDesign } = state
+
+    if (!showMobileNavigation) return
+    if (width < breakPointMobileDesign) return
 
     toggleMobileNavigationVisibility()
   }, [width])
 
   React.useEffect(() => {
     autoCloseMobileNavigation()
+    toggleScreenSize()
   }, [width])
 
   const toggleMobileNavigationVisibility = () => {

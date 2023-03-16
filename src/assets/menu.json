@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Features",
+    "subs": [
+      { "name": "Todo List", "icon": "icon-todo.svg" },
+      { "name": "Calendar", "icon": "icon-calendar.svg" },
+      { "name": "Reminders", "icon": "icon-reminders.svg" },
+      { "name": "Planning", "icon": "icon-planning.svg" }
+    ]
+  },
+  {
+    "name": "Company",
+    "subs": [
+      { "name": "History List" },
+      { "name": "Our Team" },
+      { "name": "Blog" }
+    ]
+  },
+  {
+    "name": "Company"
+  },
+  {
+    "name": "About"
+  },
+  {
+    "name": "Login"
+  },
+  {
+    "name": "Register"
+  }
+]

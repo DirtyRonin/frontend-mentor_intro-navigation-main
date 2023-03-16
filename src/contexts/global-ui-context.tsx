@@ -3,6 +3,7 @@ import React from 'react'
 export type GlobalUiContextProps = {
   showMobileNavigation: boolean
   breakPointMobileDesign: number
+  screenSize: 'desktop' | 'mobile' | 'none'
 }
 
 export type GlobalUiContextActionProps = {

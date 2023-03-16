@@ -1,17 +1,17 @@
-import { Modal } from './components/modal'
-import { MobileNavigation } from './components/mobile-navigation'
 import { GlobalUiContextProvider } from './components/context-providers'
-import { MobileHeader } from './components/mobile-header'
+import { AppHeader } from './components/app-header'
 import { LandingPage } from './pages'
 import { TransparentBackground } from './components/transparent-background'
+import { Modal } from './components/modal'
+import { MobileNavigation } from './components/navigation'
 
 function App() {
   return (
     <GlobalUiContextProvider>
-      <div className='relative w-mobile h-mobile bg-almost-white '>
+      <div className='relative bg-almost-white w-mobile h-mobile md:h-desktop md:w-desktop '>
         <TransparentBackground />
         <header>
-          <MobileHeader />
+          <AppHeader />
         </header>
         <nav>
           <Modal>

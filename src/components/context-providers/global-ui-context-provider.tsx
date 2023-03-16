@@ -6,7 +6,7 @@ export function GlobalUiContextProvider({
   children
 }: React.PropsWithChildren<{}>) {
   const {
-    state: { showMobileNavigation, breakPointMobileDesign },
+    state: { showMobileNavigation, breakPointMobileDesign, screenSize },
     toggleMobileNavigationVisibility
   } = useGlobalUi()
 
@@ -16,6 +16,7 @@ export function GlobalUiContextProvider({
         value={{
           showMobileNavigation,
           breakPointMobileDesign,
+          screenSize,
           toggleMobileNavigationVisibility
         }}>
         {children}

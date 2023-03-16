@@ -9,10 +9,12 @@ module.exports = {
         'almost-black': 'hsl(0, 0%, 8%)'
       },
       height: {
-        mobile: '775px'
+        mobile: '775px',
+        desktop: '900px'
       },
       width: {
         mobile: '375px',
+        desktop: '1440px',
         'mobile-navigation': '240px'
       }
     }
