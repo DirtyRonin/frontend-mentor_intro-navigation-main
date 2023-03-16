@@ -2,6 +2,7 @@ import React from 'react'
 
 export type GlobalUiContextProps = {
   showMobileNavigation: boolean
+  breakPointMobileDesign: number
 }
 
 export type GlobalUiContextActionProps = {
