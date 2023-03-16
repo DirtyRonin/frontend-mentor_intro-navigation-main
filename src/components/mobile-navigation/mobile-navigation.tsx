@@ -11,7 +11,7 @@ export function MobileNavigation() {
 
   return (
     <div
-      className={`absolute position-right bg-almost-white h-mobile w-mobile-navigation ${
+      className={`absolute position-right bg-almost-white h-mobile w-mobile-navigation z-[1000] ${
         showMobileNavigation ? 'visible' : 'hidden'
       }`}>
       <div className='grid p-4 gap-8'>

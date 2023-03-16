@@ -2,7 +2,7 @@ import { urlWrapper } from '../utils/url-wrapper'
 
 export function LandingPage() {
   return (
-    <div className='flex flex-col gap-12'>
+    <div className='flex flex-col gap-[40px]'>
       <picture>
         <source
           media='(min-width:300px)'
@@ -14,7 +14,7 @@ export function LandingPage() {
         />
         <img alt='' src={urlWrapper('image-hero-mobile.png')} />
       </picture>
-      <div className='flex flex-col justify-center text-center  gap-4'>
+      <div className='flex flex-col justify-center text-center gap-2'>
         <h1 className='text-almost-black text-[2rem] font-extrabold mx-1'>
           Make remote work
         </h1>
@@ -22,11 +22,11 @@ export function LandingPage() {
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <div>
-          <button className='bg-almost-black text-almost-white rounded-xl text-sm px-5 py-3'>
-            Learn more
-          </button>
-        </div>
+      </div>
+      <div className='flex justify-center'>
+        <button className='bg-almost-black text-almost-white rounded-xl text-sm px-5 py-3'>
+          Learn more
+        </button>
       </div>
       <div className='flex items-center gap-6 px-3.5'>
         <img

@@ -5,7 +5,7 @@ export function MobileHeader() {
   const { toggleMobileNavigationVisibility } = useGlobalUiContext()
 
   return (
-    <div className='flex justify-between p-4'>
+    <div className='flex justify-between py-[25px] px-4'>
       <img alt='' src={urlWrapper('logo.svg')} />
       <button onClick={toggleMobileNavigationVisibility}>
         <img className='h-4 w-7' alt='' src={urlWrapper('icon-menu.svg')} />
