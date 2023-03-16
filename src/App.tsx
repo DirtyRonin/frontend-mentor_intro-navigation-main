@@ -8,7 +8,7 @@ import { TransparentBackground } from './components/transparent-background'
 function App() {
   return (
     <GlobalUiContextProvider>
-      <div className='relative w-mobile h-mobile bg-white '>
+      <div className='relative w-mobile h-mobile bg-almost-white '>
         <TransparentBackground />
         <header>
           <MobileHeader />

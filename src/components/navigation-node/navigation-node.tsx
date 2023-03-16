@@ -32,7 +32,9 @@ export function NavigationNode({
         {hasIcon() ? (
           <img className='w-auto h-[20px]' alt='' src={icon} />
         ) : null}
-        <p className='text-medium-gray text-sm font-semibold'>{name}</p>
+        <p className='text-medium-gray text-sm font-semibold active:text-almost-black'>
+          {name}
+        </p>
         {hasChildren() ? (
           <img
             className='h-[6px] w-[10px]'

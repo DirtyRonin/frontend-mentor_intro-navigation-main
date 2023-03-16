@@ -14,7 +14,7 @@ export function MobileNavigation() {
       className={`absolute position-right bg-almost-white h-mobile w-mobile-navigation z-[1000] ${
         showMobileNavigation ? 'visible' : 'hidden'
       }`}>
-      <div className='grid p-4 gap-8'>
+      <div className='grid py-[25px] px-4  gap-8'>
         <div className='flex flex-row-reverse'>
           <button onClick={toggleMobileNavigationVisibility}>
             <img

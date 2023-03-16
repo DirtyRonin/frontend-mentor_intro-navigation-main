@@ -24,7 +24,9 @@ export function LandingPage() {
         </p>
       </div>
       <div className='flex justify-center'>
-        <button className='bg-almost-black text-almost-white rounded-xl text-sm px-5 py-3'>
+        <button
+          className='bg-almost-black text-almost-white rounded-xl text-sm px-5 py-3 
+        active:bg-almost-white active:text-almost-black active:border active:border-almost-black '>
           Learn more
         </button>
       </div>
