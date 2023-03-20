@@ -26,9 +26,9 @@ export function NavigationNode({
   }
 
   const nodeElement = () => (
-    <div className='flex md:grid md:grid-cols-[minmax(20px,auto),1fr] gap-4 md:gap-2 items-center justify-start md:justify-start '>
+    <div className='flex lg:grid lg:grid-cols-[minmax(20px,auto),1fr] gap-4 lg:gap-2 items-center justify-start lg:justify-start '>
       {hasIcon() ? <img className='w-auto h-[20px]' alt='' src={icon} /> : null}
-      <p className='text-medium-gray md:text-left text-sm md:text-[.8rem] font-semibold md:font-medium active:text-almost-black'>
+      <p className='text-medium-gray lg:text-left text-sm lg:text-[.8rem] font-semibold lg:font-medium active:text-almost-black'>
         {name}
       </p>
       {hasChildren() ? (
@@ -77,8 +77,6 @@ export function NavigationNode({
       ) : (
         <a href={`#${name.replace(' ', '-')}`}>{nodeElement()}</a>
       )}
-
-      {/* <button onClick={onClick} className='flex gap-4 items-center'></button> */}
     </>
   )
 }

@@ -8,7 +8,7 @@ import { MobileNavigation } from './components/navigation'
 function App() {
   return (
     <GlobalUiContextProvider>
-      <div className='relative bg-almost-white w-mobile h-mobile md:h-desktop md:w-desktop '>
+      <div className='relative bg-almost-white w-mobile h-mobile lg:h-desktop lg:w-full '>
         <TransparentBackground />
         <header>
           <AppHeader />
@@ -19,7 +19,11 @@ function App() {
           </Modal>
         </nav>
         <main>
-          <LandingPage />
+          <div className='flex justify-center'>
+            <div className='max-w-[1024px]'>
+              <LandingPage />
+            </div>
+          </div>
         </main>
         <footer></footer>
       </div>

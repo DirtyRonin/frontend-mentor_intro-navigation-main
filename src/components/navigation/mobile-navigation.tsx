@@ -27,8 +27,10 @@ export function MobileNavigation() {
             <div className='flex flex-col gap-4'>
               <CreateMenu />
               <div className='flex flex-col text-medium-gray text-[.8rem]'>
-                <button className='pt-2 pb-3'>Login</button>
-                <button className='py-2 border-2 border-medium-gray rounded-xl'>
+                <button className='pt-2 pb-3 active:text-almost-black'>
+                  Login
+                </button>
+                <button className='py-2 border-2 border-medium-gray rounded-xl active:text-almost-black'>
                   Register
                 </button>
               </div>

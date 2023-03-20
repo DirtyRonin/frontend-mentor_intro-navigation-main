@@ -5,7 +5,7 @@ import { useActualWidth } from './use-actual-width'
 export function useGlobalUi() {
   const [state, dispatch] = React.useState<GlobalUiContextProps>({
     showMobileNavigation: false,
-    breakPointMobileDesign: 768, //md breakpoint,
+    breakPointMobileDesign: 1024, //md breakpoint,
     screenSize: 'none'
   })
 
